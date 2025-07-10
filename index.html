@@ -1,29 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Rachel | Computer Science Student</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>Hello, I’m Rachel!</h1>
-    <p>I'm a Computer Science student at Carleton University.</p>
-  </header>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>🃏 War Card Game in Python</li>
-      <li>👾 Among Us (Single-player clone)</li>
-    </ul>
-  </section>
+  <aside class="sidebar">
+    <a href="index.html" class="logo">R</a>
+    <div class="role">CS Student</div>
+    <nav>
+      <a href="about.html">About Me</a>
+      <a href="#skills">My Skills</a>
+      <a href="work.html">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="socials">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+  </aside>
 
-  <footer>
-    <p>Contact me: Rachelthimiou@gmail.com | <a href="https://github.com/yourusername">GitHub</a></p>
-  </footer>
+  <main class="content">
+    <section class="hero">
+      <h1>Hi, I'm <span class="highlight">Rachel</span>,<br>computer science student</h1>
+      <p class="subtitle">Aspiring software engineer with a passion for solving real-world problems</p>
+      <a href="#contact" class="cta-button">
+        <i class="fas fa-paper-plane"></i> Contact me!
+      </a>
+    </section>
 
-  <script src="script.js"></script>
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>You can reach me at <a href="mailto:rachel@example.com">rachel@example.com</a> or use the form below.</p>
+
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </section>
+  </main>
+
 </body>
 </html>
